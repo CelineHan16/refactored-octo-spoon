@@ -1,0 +1,63 @@
+/* Header */
+body {
+  background-color: lightgrey;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar {
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  
+}
+.navbar nav {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.navbar .logo img {
+  margin-right: 10px;
+}
+.navbar .logo {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+}
+.navbar ul li {
+  display: inline;
+  
+}
+.navbar ul li a {
+  color: blue;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.navbar ul li a.active {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar.navbar-inverse {
+  background-color: black;
+}
+.navbar.navbar-inverse .logo {
+  color: white;
+}
+.navbar.navbar-inverse ul li a {
+  color: white;
+}
+.navbar.navbar-inverse ul li a.active {
+  color: white;
+  background-color: white;
+}
