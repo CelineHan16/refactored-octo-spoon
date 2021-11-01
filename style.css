@@ -7,14 +7,13 @@ body {
 .navbar {
   background-color: white;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-  
+  padding: 20px;
 }
 .navbar nav {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1050px;
   display: flex;
   justify-content: space-between;
-  
 }
 .navbar .logo img {
   margin-right: 10px;
@@ -30,11 +29,9 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  
 }
 .navbar ul li {
   display: inline;
-  
 }
 .navbar ul li a {
   color: blue;
@@ -47,7 +44,13 @@ body {
   color: white;
   border-radius: 5px;
 }
+hr {
+  width: 1050px;
+  margin-top: 15px;
+  color: lightgrey;
+}
 
+/* black */
 .navbar.navbar-inverse {
   background-color: black;
 }
@@ -58,6 +61,121 @@ body {
   color: white;
 }
 .navbar.navbar-inverse ul li a.active {
-  color: white;
+  color: rgb(7, 7, 7);
   background-color: white;
 }
+
+/* Empty */
+.navbar.navbar-buttons ul {
+  margin: 0 auto;
+}
+
+/* Login */
+
+.navbar.navbar-login ul li a {
+  color: black;
+  padding: 5px 5px;
+}
+.navbar.navbar-login ul li a.active {
+  color: rgb(109, 108, 108);
+  background-color: white;
+}
+.navbar.navbar-login div {
+}
+.navbar.navbar-login div a {
+  color: white;
+  background-color: blue;
+  padding: 10px 8px;
+  text-decoration: none;
+  font-size: 15px;
+  border: 1px solid blue;
+  border-radius: 4px;
+}
+.navbar.navbar-login div a.active {
+  color: blue;
+  background-color: white;
+  margin-right: 5px;
+}
+.navbar.navbar-login div a.active {
+  color: blue;
+  transition: all 0.2s ease-in-out;
+}
+.navbar.navbar-login div a.active:hover {
+  color: white;
+  background-color: blue;
+}
+
+/* Search */
+.navbar.navbar-search {
+  background-color: black;
+  font-size: 14px;
+}
+.navbar.navbar-search ul {
+  margin: 10px;
+  margin-left: -330px;
+}
+.navbar.navbar-search ul li a {
+  color: white;
+  padding: 5px 5px;
+}
+.navbar.navbar-search ul li a.active {
+  color: rgb(109, 108, 108);
+  background-color: black;
+}
+.navbar.navbar-search div input {
+  padding: 10px;
+  background-color: black;
+  border: 2px solid rgb(83, 83, 83);
+  border-radius: 5px;
+  margin-right: 7px;
+  font-size: 15px;
+  color: white;
+}
+.navbar.navbar-search div input:hover {
+  box-shadow: 10px rgb(255, 255, 255);
+}
+.navbar.navbar-search div a {
+  color: black;
+  background-color: #fda50f;
+  padding: 10px 8px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.navbar.navbar-search div a.active {
+  color: white;
+  background-color: black;
+  margin-right: 5px;
+  border: 1px solid white;
+  transition: all 0.2s ease-in-out;
+}
+.navbar.navbar-search div a.active:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Window */
+.navbar.navbar-window {
+  font-size: 14px;
+}
+.navbar.navbar-window ul {
+  margin: 10px;
+  margin-left: -455px;
+}
+.navbar.navbar-window ul li a {
+  color: black;
+  padding: 5px 5px;
+}
+.navbar.navbar-window ul li a.active {
+  color: rgb(109, 108, 108);
+  background-color: white;
+}
+.navbar.navbar-window input {
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-right: 7px;
+  font-size: 15px;
+  color: black;
+}
+
